@@ -25,11 +25,22 @@ const Register = () => {
 
 
 
+          <div className='relative'>
+            <div className='bg-b absolute -top-4 -right-20  origin-center rotate-3 w-full h-[110vh]'>
+              <div class="relative h-screen ...">
+                <div class="absolute shadow-lg shadow-[#0201019a] bg-[#023726] w-full h-24 rounded-tl rounded-[3rem] p-3 origin-center -rotate-12  -left-14 -top-10 
+               ">
+                </div>
+                <div class="absolute bg-[#210d3b] down-div w-full top-96 rounded-[2rem]  p-3 origin-center -rotate-45  -bottom-20  -right-0 
+               ">
+                </div>
+                <div class="absolute bg-[#682815] shadow-lg shadow-black w-full top-[37rem] rounded-[2rem]  p-3 origin-center -rotate-45  -bottom-96  -right-10 
+               ">
+                </div>
 
-          <div class="origin-[33%_75%] rotate-12 bg-black h-screen">
-
-            <div className='origin-center absolute  -rotate-12 mt-[-100px] h-[130px] w-full rounded-2xl bg-red-600 '>
+              </div>
             </div>
+
           </div>
 
 

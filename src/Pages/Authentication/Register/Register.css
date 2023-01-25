@@ -1,0 +1,7 @@
+.bg-b {
+  background-image: linear-gradient(to left top, #0b1101, #151f08, #182d0f, #193b13, #174b19, #114b1d, #094b20, #004b24, #003b22, #022a1c, #041b15, #000705);
+}
+
+.down-div {
+  box-shadow: 3px -3px 3px -2px #0200009a;
+}
