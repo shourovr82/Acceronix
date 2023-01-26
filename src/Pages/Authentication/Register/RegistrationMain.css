@@ -13,7 +13,7 @@
 
 .btn-switch__label {
   display: inline-block;
-  padding: .75em .5em .75em .75em;
+  padding: .50em 4rem .50em .75em;
   vertical-align: top;
   font-size: 1em;
   font-weight: 700;
@@ -58,15 +58,16 @@
 }
 
 .btn-switch__radio_yes:checked~.btn-switch__label:before {
-  background: red;
+  background: linear-gradient(#633ed9, #2a1891);
+  /* bg-gradient-to-r from-[#633ed9] to-[#200d89] */
 }
 
 .btn-switch__label_no:after {
   content: "";
   position: absolute;
   z-index: 2;
-  top: .5em;
-  bottom: .5em;
+  top: .30em;
+  bottom: .30em;
   left: .5em;
   width: 2em;
   background: #fff;
@@ -88,4 +89,22 @@
 
 .btn-switch__radio_yes:checked~.btn-switch__label_yes {
   color: #fff;
+}
+
+
+
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  font-family: inherit;
+  color: #04143f !important;
+  border: thin solid rgba(77, 77, 77, 0) !important;
+  border-radius: 4px;
+  background: transparent;
+  font-weight: 600 !important;
 }
