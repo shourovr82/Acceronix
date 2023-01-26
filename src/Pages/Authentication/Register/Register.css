@@ -1,7 +1,120 @@
 .bg-b {
-  background-image: linear-gradient(to left top, #0b1101, #151f08, #182d0f, #193b13, #174b19, #114b1d, #094b20, #004b24, #003b22, #022a1c, #041b15, #000705);
+  background-image: linear-gradient(to right bottom, #433eb4, #3a33a3, #312993, #281f83, #1e1574, #19126c, #130e64, #0d0b5c, #0c0d59, #0c0f55, #0c1152, #0d124e);
 }
 
 .down-div {
-  box-shadow: 3px -3px 3px -2px #0200009a;
+  box-shadow: -1px -7px 21px 0px #0000009a;
+}
+
+.srv {
+  background-image: linear-gradient(to left top, #0a0e03, #12190b, #152212, #152c18, #13371f, #0f3a21, #0a3e23, #024125, #013d20, #013a1a, #003615, #00330f);
+}
+
+
+
+
+.form {
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+}
+
+
+
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.forminput {
+  background-color: rgba(9, 21, 54, 0.123);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #261d80;
+  font-weight: 600;
+  font-size: 15px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  /* background-color: #fff; */
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.forminput:focus~.cut,
+.forminput:not(:placeholder-shown)~.cut {
+  background-color: #faf7f5;
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #01041b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.forminput:focus~.placeholder,
+.forminput:not(:placeholder-shown)~.placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.forminput:not(:placeholder-shown)~.placeholder {
+  color: #808097;
+}
+
+.forminput:focus~.placeholder {
+  color: #261d80;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
 }

@@ -1,4 +1,4 @@
-<!-- <a href="#" class="btn">Hover Me</a>
+<!-- <a href="#" className="btn">Hover Me</a>
 
 ---
 * {
