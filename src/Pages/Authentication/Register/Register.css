@@ -32,27 +32,32 @@
 }
 
 .forminput {
-  background-color: rgba(9, 21, 54, 0.123);
-  border-radius: 12px;
+  background-color: #0915361f;
   border: 0;
+  border-radius: 14px;
   box-sizing: border-box;
   color: #261d80;
   font-weight: 600;
   font-size: 15px;
   height: 100%;
   outline: 0;
-  padding: 4px 10px 0;
   width: 100%;
+  padding: 10px;
 }
 
 .forminputupload {
-  background-color: rgba(9, 21, 54, 0.123);
+  background-color: rgba(9, 21, 54, 0);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
 
+.forminputuploadFile {
+  background-color: rgba(9, 21, 54, 0.123);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: #261d80;
   font-weight: 600;
   font-size: 15px;
 }
+
 
 .cut {
   /* background-color: #fff; */
