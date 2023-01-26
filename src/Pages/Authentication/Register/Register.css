@@ -13,18 +13,12 @@
 
 
 
-.form {
-  border-radius: 20px;
-  box-sizing: border-box;
-  height: 500px;
-  padding: 20px;
-}
 
 
 
 
 .input-container {
-  height: 50px;
+  height: 45px;
   position: relative;
   width: 100%;
 }
@@ -34,7 +28,7 @@
 }
 
 .ic2 {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .forminput {
@@ -47,8 +41,17 @@
   font-size: 15px;
   height: 100%;
   outline: 0;
-  padding: 4px 20px 0;
+  padding: 4px 10px 0;
   width: 100%;
+}
+
+.forminputupload {
+  background-color: rgba(9, 21, 54, 0.123);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #261d80;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .cut {
@@ -77,7 +80,7 @@
   color: #01041b;
   font-family: sans-serif;
   left: 20px;
-  line-height: 14px;
+  line-height: 15px;
   font-size: 14px;
   font-weight: 600;
   pointer-events: none;
@@ -85,6 +88,7 @@
   transform-origin: 0 50%;
   transition: transform 200ms, color 200ms;
   top: 20px;
+  bottom: 16px;
 }
 
 .forminput:focus~.placeholder,
@@ -98,23 +102,4 @@
 
 .forminput:focus~.placeholder {
   color: #261d80;
-}
-
-.submit {
-  background-color: #08d;
-  border-radius: 12px;
-  border: 0;
-  box-sizing: border-box;
-  color: #eee;
-  cursor: pointer;
-  font-size: 18px;
-  height: 50px;
-  margin-top: 38px;
-  outline: 0;
-  text-align: center;
-  width: 100%;
-}
-
-.submit:active {
-  background-color: #06b;
 }

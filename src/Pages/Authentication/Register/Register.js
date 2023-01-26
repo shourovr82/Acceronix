@@ -24,12 +24,11 @@ const Register = () => {
           </div>
 
           {/*  Register Main */}
-          <div className='flex   items-center w-full '>
+          <div className=' w-full '>
             <RegisterMain />
           </div>
           <div className='flex border'>
             <div>
-              <h1>ENG</h1>
               <h1>ENG</h1>
             </div>
 
