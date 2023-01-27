@@ -158,3 +158,61 @@ body {
 
 
 ===================================================================
+<!-- 
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  font-size: 20px;
+  font-family: Roboto;
+}
+
+svg {
+  font-family: sans-serif;
+}
+
+text {
+  font-size: 50px;
+  fill: green;
+  transform: translateY(3px);
+  animation: wavyText 1.3s alternate steps(2, end) infinite;
+}
+
+.w {
+  animation-delay: 0;
+}
+
+.a {
+  animation-delay: 0.1s;
+}
+
+.v {
+  animation-delay: 0.15s;
+}
+
+.y {
+  animation-delay: 0.2s;
+}
+
+@keyframes wavyText {
+  20%,
+  100% {
+    transform: translate(0, 3px);
+  }
+
+  0% {
+    transform: translate(0, 0px);
+  }
+  10% {
+    transform: translate(0, 3px);
+  }
+}
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 400 400">
+  <text y="50%" class="w" font-size="20px">W</text>
+  <text x="22%" y="50%" class="a">A</text>
+  <text x="40%" y="50%" class="v">V</text>
+  <text x="60%" y="50%" class="y">Y</text>
+</svg> -->
+
+===============================================================

@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { HiEye, HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { GoEyeClosed } from 'react-icons/go';
-import { FaFacebookF } from 'react-icons/fa';
+import { FaFacebookF, FaGithub } from 'react-icons/fa';
 import { FcGoogle } from 'react-icons/fc';
 import './RegistrationMain.css'
 import RegistrationText from './RegistrationText';
@@ -302,6 +302,9 @@ const RegisterMain = () => {
 
             <p className='border rounded-full cursor-pointer hover:shadow-md socialbtn  p-2.5'>
               <FaFacebookF className='text-2xl text-[#1877f2]' />
+            </p>
+            <p className='border rounded-full cursor-pointer hover:shadow-md socialbtn  p-2.5'>
+              <FaGithub className='text-2xl text-[#171515 ]' />
             </p>
           </div>
 

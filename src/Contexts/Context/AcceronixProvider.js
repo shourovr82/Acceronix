@@ -67,7 +67,7 @@ const AcceronixProvider = ({ children }) => {
     logInWithEmail,
   }
   return (
-    <div>
+    <div data-theme='light'>
       <AcceronixContext.Provider value={contextInfo}>
         {children}
       </AcceronixContext.Provider>

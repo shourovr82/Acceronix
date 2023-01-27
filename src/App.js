@@ -3,7 +3,7 @@ import router from './Routes/Router';
 
 function App({ children }) {
   return (
-    <div data-theme="white">
+    <div >
       <RouterProvider router={router}>
         {children}
       </RouterProvider>

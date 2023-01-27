@@ -4,6 +4,7 @@ import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import RegisterSide from './RegisterSide';
 import RegisterMain from './RegisterMain';
 import ReactFlagsSelect from 'react-flags-select';
+import { Link } from 'react-router-dom';
 
 
 const Register = () => {
@@ -21,12 +22,17 @@ const Register = () => {
 
             <div className='flex justify-between   items-center w-full '>
               <div>
-                <button className=' border p-2 rounded-full'>
-                  <HiOutlineArrowNarrowLeft />
-                </button>
+                <Link to='/'>
+
+                  <button className=' border p-2 rounded-full'>
+                    <HiOutlineArrowNarrowLeft />
+                  </button>
+                </Link>
               </div>
-              <div className=''>
-                <h4>Already member? <span className='text-emerald-700'>Sign In</span> </h4>
+
+              <div className='flex justify-end  '>
+                <p className='font-semibold text-sm text-slate-500'>Already member? <Link
+                  to='/login' className='text-[#1f2aa1] cursor-pointer hover:underline underline-offset-4'>Sign In</Link> </p>
               </div>
             </div>
 
