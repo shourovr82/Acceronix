@@ -18,11 +18,13 @@ const RegisterMain = () => {
   const [accountType, setAccountType] = useState('Buyer');
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
   const onSelect = (code) => setSelected(code);
-  const { handleGoogleLogin, registerAccount } = useContext(AcceronixContext);
+  const { handleGoogleLogin,
+    registerAccount,
+    updateCurrentUserProfile } = useContext(AcceronixContext);
   const searchable = Boolean("Searchable", false);
   const imgbbSecretKey = process.env.REACT_APP_imgbb_key;
 
-
+  //  get account type of user
   const getAccountType = () => {
     if (toggle) {
       setAccountType('Seller')
@@ -31,43 +33,80 @@ const RegisterMain = () => {
     }
   }
 
+  // upload and host photo to imgbb
   const hostProfilePhoto = (image, formData) => {
     const url = `https://api.imgbb.com/1/upload?key=${imgbbSecretKey}`;
-    if (image) {
+    if (image && formData) {
+      console.log('shafin', formData);
       fetch(url, {
         method: 'POST',
         body: formData
       })
         .then(res => res.json())
         .then(imgData => {
+          console.log(imgData);
           const photoURL = imgData?.data?.url;
-          setPhotoLink(photoURL)
+          setPhotoLink(photoURL);
         })
     }
   }
 
 
-
   // register new account
   const handleRegister = (data) => {
-
     const image = data.image[0];
     // host image 
     if (image) {
       const formData = new FormData();
-      formData.append(image, formData);
+      formData.append('image', image);
       if (formData) {
         hostProfilePhoto(image, formData);
       }
-      console.log(formData);
     }
     const allData = {
       ...data,
       accountType,
       photoURL: photoLink
     }
+    const userDetails = {
+      displayName: allData?.firstname + ' ' + allData?.lastname,
+      photoURL: photoLink
+    }
 
-    console.log(allData);
+    // register new account 
+    registerAccount(allData?.email, allData?.password)
+      .then(result => {
+        const newUser = result.user;
+        console.log(newUser);
+        // update the user on firebase
+        updateCurrentUserProfile(userDetails)
+          .then(result => {
+            const currentUser = {
+              fullname: userDetails?.displayName,
+              firstname: allData?.firstname,
+              lastname: allData?.lastname,
+              email: allData?.email,
+              password: allData?.password,
+              photoURL: photoLink,
+              accountType: accountType,
+              country: selected,
+            }
+            fetch('http://localhost:8080/registeraccount', {
+              method: 'POST',
+              headers: {
+                'content-type': 'application/json',
+              },
+              body: JSON.stringify(currentUser)
+            })
+              .then(res => res.json())
+              .then(result => {
+                console.log(result);
+              })
+          })
+          .catch(e => console.log(e))
+      })
+      .catch(e => console.log(e))
+
   }
 
 
@@ -82,7 +121,26 @@ const RegisterMain = () => {
   const googleLoginHandle = () => {
     handleGoogleLogin()
       .then(result => {
-        const user = result.user;
+        const googleUser = result.user;
+        const currentUser = {
+          fullname: googleUser?.displayName,
+          firstname: googleUser?.displayName.split(' ')[0],
+          lastname: googleUser?.displayName.split(' ')[1],
+          email: googleUser?.email,
+          photoURL: googleUser?.photoURL,
+          accountType: accountType,
+        }
+        fetch('http://localhost:8080/googleregister', {
+          method: 'POST',
+          headers: {
+            'content-type': 'application/json',
+          },
+          body: JSON.stringify(currentUser)
+        })
+          .then(res => res.json())
+          .then(result => {
+            console.log(result)
+          })
       })
       .catch(e => console.log(e))
   }
@@ -238,11 +296,11 @@ const RegisterMain = () => {
           <div className='flex items-center justify-between gap-2'>
             <p
               onClick={() => googleLoginHandle()}
-              className='border  rounded-full p-2.5'>
+              className='border cursor-pointer hover:shadow-md socialbtn rounded-full p-2.5'>
               <FcGoogle className='text-2xl' />
             </p>
 
-            <p className='border rounded-full p-2.5'>
+            <p className='border rounded-full cursor-pointer hover:shadow-md socialbtn  p-2.5'>
               <FaFacebookF className='text-2xl text-[#1877f2]' />
             </p>
           </div>

@@ -19,6 +19,7 @@ const AcceronixProvider = ({ children }) => {
 
   const updateCurrentUserProfile = (userDetails) => {
     setLoading(true);
+    console.log(userDetails)
     return updateProfile(auth.currentUser, {
       displayName: userDetails.displayName,
       photoURL: userDetails.photoURL
