@@ -12,7 +12,7 @@ const Categories = () => {
           <CategoryMainItem />
         </div>
         {/* right category */}
-        <div class=" flex flex-col gap-3 h-full border col-span-2 ">
+        <div class=" flex flex-col gap-3 h-full  col-span-2 ">
           <div className=' categorysecond h-full p-2 px-3'>
             <div className='flex gap-5 flex-col '>
               <h1 className='text-2xl font-bold'>JBL Music <br /> Speaker</h1>
