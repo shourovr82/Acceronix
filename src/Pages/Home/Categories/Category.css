@@ -1,0 +1,56 @@
+.primary-menu ul li ul li {
+  display: block;
+}
+
+.primary-menu ul li {
+  display: inline-block;
+}
+
+
+
+/* drop down menu css*/
+
+
+.primary-menu ul li ul {
+  position: absolute;
+  left: 200px;
+  height: 100%;
+  width: 150%;
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  visibility: hidden;
+  transition: .4s;
+  transform: scaleY(0);
+  transform-origin: top center;
+  top: 0;
+}
+
+.service-btn:hover ul {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+}
+
+
+
+.main-category-bg {
+  background-image: url('../../../Assets/Category/Category2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.categorysecond {
+  background-image: url('../../../Assets/Category/category3.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.categorythird {
+  background-image: url('../../../Assets/Category/category4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
