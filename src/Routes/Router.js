@@ -8,6 +8,12 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <AcceronixLayout />,
+    children: [
+      {
+        path: '/',
+        element: <HomePage />
+      }
+    ]
   },
   {
     path: '/register',
