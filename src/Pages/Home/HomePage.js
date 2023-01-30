@@ -1,5 +1,5 @@
 import React from 'react';
-import BannerArea from './BannerArea';
+import BannerArea from './Banner/BannerArea';
 import Categories from './Categories/Categories';
 import LatestProducts from './LatestProducts/LatestProducts';
 import ProductsTab from './Productsforpeople/ProductsTab';

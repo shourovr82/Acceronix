@@ -6,18 +6,17 @@ import { Autoplay, EffectCards, EffectCoverflow, EffectCreative, EffectCube, Eff
 // import swiper style custom
 import "swiper/css";
 import "swiper/css/pagination";
-import "./Swiperstyle.css";
-import banner1 from '../../Assets/banner1.jpg'
-import banner2 from '../../Assets/banner2.jpg'
-import banner3 from '../../Assets/banner3.jpg'
-import banner4 from '../../Assets/banner4.jpg'
-import banner5 from '../../Assets/banner5.jpg'
+import banner1 from '../../../Assets/banner1.jpg'
+import banner2 from '../../../Assets/banner2.jpg'
+import banner3 from '../../../Assets/banner3.jpg'
+import banner4 from '../../../Assets/banner4.jpg'
+import banner5 from '../../../Assets/banner5.jpg'
 
 // import photos
 
 
-const BannerArea = () => {
 
+const BannerArea = () => {
   const allData = [
     {
       image: banner1
@@ -35,7 +34,6 @@ const BannerArea = () => {
       image: banner5
     },
   ]
-
 
   return (
     <div className=''>
@@ -55,12 +53,12 @@ const BannerArea = () => {
           navigation={true}
           // effect={"fade"}
           modules={[Pagination, Autoplay, Navigation]}
-          className="mySwiper h-[420px] "
+          className="h-[420px] "
         >
           {allData && allData?.map(photodata =>
             <SwiperSlide>
               <div>
-                <img src={photodata?.image} className=' object-contain  swiperimage' alt="" />
+                <img src={photodata?.image} className='object-cover' alt="" />
               </div>
             </SwiperSlide>
           )}
@@ -69,33 +67,5 @@ const BannerArea = () => {
     </div>
   );
 };
+
 export default BannerArea;
-
-
-// <>
-//   <Swiper
-//     slidesPerView={1}
-//     slidesPerGroup={1}
-//     loop={true}
-//     loopFillGroupWithBlank={true}
-//     pagination={{
-//       clickable: true,
-//     }}
-//     navigation={true}
-//     modules={[Pagination, Navigation]}
-//     className="mySwiper"
-//   >
-//     <SwiperSlide>Slide 1</SwiperSlide>
-//     <SwiperSlide>Slide 2</SwiperSlide>
-//     <SwiperSlide>Slide 3</SwiperSlide>
-//     <SwiperSlide>Slide 4</SwiperSlide>
-//     <SwiperSlide>Slide 5</SwiperSlide>
-//     <SwiperSlide>Slide 6</SwiperSlide>
-//     <SwiperSlide>Slide 7</SwiperSlide>
-//     <SwiperSlide>Slide 8</SwiperSlide>
-//     <SwiperSlide>Slide 9</SwiperSlide>
-//   </Swiper>
-// </>
-
-
-

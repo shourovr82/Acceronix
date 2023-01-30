@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import ProductsForKids from './ProductsForKids';
+import ProductsForMen from './ProductsForMen';
+import ProductsForWomen from './ProductsForWomen';
 import './ProductsTab.css'
 
 const ProductsTab = () => {
@@ -9,45 +12,32 @@ const ProductsTab = () => {
       <div class=" ">
 
         <div>
-          <div class=" flex items-center justify-start gap-6 ">
-            <label onClick={() => setProductTab(1)} class="font-semibold text-lg" id="one-tab" for="one">For Men</label>
+          <div class="py-10 flex items-center justify-start gap-6 ">
+            <label onClick={() => setProductTab(1)} class="font-semibold cursor-pointer text-lg" id="one-tab" for="one">For Men</label>
             <span className='text-xl font-bold text-slate-400'>/</span>
-            <label onClick={() => setProductTab(2)} class="font-semibold text-lg" id="two-tab" for="two">For Women</label>
+            <label onClick={() => setProductTab(2)} class="font-semibold cursor-pointer text-lg" id="two-tab" for="two">For Women</label>
             <span className='text-xl font-bold text-slate-400'>/</span>
-            <label onClick={() => setProductTab(3)} class="font-semibold text-lg" id="three-tab" for="three">For Kids</label>
+            <label onClick={() => setProductTab(3)} class="font-semibold cursor-pointer text-lg" id="three-tab" for="three">For Kids</label>
             <hr className='w-[68%] mt-2' />
           </div>
-
-
-
         </div>
 
 
         <div>
           {productTab === 1 && (
             <div>
-              <div class="" >
-                <div class="">Shafin</div>
-                <p>rahman one panel</p>
-              </div>
+              <ProductsForMen />
             </div>
           )}
-          {
-            productTab === 1 && <div class="panel" id="one-panel">
-              <div class="panel-title">Shafin</div>
-              <p>rahman one panel</p>
-            </div>
-          }
+
           {productTab === 2 &&
             <div class="" id="">
-              <div class="">shafin shakljfd</div>
-              <p>second panel</p>
+              <ProductsForWomen />
             </div>
           }
           {productTab === 3 &&
             <div class="" id="">
-              <div class="">shourolkajdfkaljdkj</div>
-              <p>third panel</p>
+              <ProductsForKids />
             </div>
           }
         </div>

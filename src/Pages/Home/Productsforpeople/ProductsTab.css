@@ -1,77 +1,3 @@
-/* h2 {
-  color: #000;
-  text-align: center;
-  font-size: 2em;
-  margin: 20px 0;
-}
-
-.warpper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.tab {
-  cursor: pointer;
-  padding: 10px 20px;
-  margin: 0px 2px;
-  background: #444;
-  display: inline-block;
-  color: #fff;
-  border-radius: 3px 3px 0px 0px;
-  box-shadow: 0 0.5rem 0.4rem #00000080;
-}
-
-.panels {
-  background: #fff;
-  box-shadow: 0 1rem 1rem #00000080;
-  min-height: 200px;
-  width: 100%;
-  border-radius: 3px;
-  overflow: hidden;
-  padding: 20px;
-  text-align: right;
-}
-
-.panel {
-  display: none;
-  animation: fadein 0.8s;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.panel-title {
-  font-size: 1.5em;
-  font-weight: normal;
-}
-
-.radio {
-  display: none;
-}
-
-#three:checked~.panels #three-panel,
-#two:checked~.panels #two-panel,
-#one:checked~.panels #one-panel {
-  display: block;
-}
-
-#two:checked~.tabs #two-tab,
-#three:checked~.tabs #three-tab,
-#one:checked~.tabs #one-tab {
-  background: #fff;
-  color: #000;
-  border-top: 3px solid #C8102E;
-
-} */
-
 .stylehr {
   font-size: 20px;
   font-family: Arial;
@@ -90,4 +16,8 @@
   top: 50%;
   margin-top: -2px;
   margin-left: 30%;
+}
+
+.cartsystem {
+  transition: .2s ease-in-out;
 }
