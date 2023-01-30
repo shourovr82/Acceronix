@@ -1,0 +1,61 @@
+.card {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  height: 105px;
+  border-radius: 30px;
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+
+}
+
+sup {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+}
+
+.location {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 33px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #000;
+
+}
+
+.degree {
+  font-size: 28px;
+  line-height: 10px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #23226B;
+  font-family: 'Poppins', sans-serif;
+}
+
+.weather-status {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffad1c;
+  font-family: 'Poppins', sans-serif;
+}

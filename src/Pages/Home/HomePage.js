@@ -4,6 +4,7 @@ import BannerArea from './Banner/BannerArea';
 import BestSellsProducts from './BestSellsProducts/BestSellsProducts';
 import Categories from './Categories/Categories';
 import FeaturedProducts from './FeaturedProducts/FeaturedProducts';
+import LatestBlogs from './LatestBlog/LatestBlogs';
 import LatestProducts from './LatestProducts/LatestProducts';
 import ProductsTab from './Productsforpeople/ProductsTab';
 import SpecialProducts from './SpecialProducts/SpecialProducts';
@@ -50,6 +51,11 @@ const HomePage = () => {
         <div className='w-full pl-1'>
           <BestSellsProducts />
         </div>
+      </div>
+
+      {/*  Latest Blog sections */}
+      <div>
+        <LatestBlogs />
       </div>
     </div>
   );
