@@ -5,7 +5,7 @@ import Navbar from '../Components/Shared/Navbar/Navbar';
 const AcceronixLayout = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Outlet />
 
     </div>

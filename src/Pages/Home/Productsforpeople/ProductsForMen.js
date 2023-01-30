@@ -40,62 +40,52 @@ import productsmen26 from '../../../Assets/Products/Productsformen/productsmen26
 import productsmen27 from '../../../Assets/Products/Productsformen/productsmen27.jpg'
 
 
+export const allData = [
+  { image: productsmen1 },
+  { image: productsmen2 },
+  { image: productsmen3 },
+  { image: productsmen4 },
+  { image: productsmen4 },
+  { image: productsmen5 },
+  { image: productsmen6 },
+  { image: productsmen7 },
+  { image: productsmen8 },
+  { image: productsmen9 },
+  { image: productsmen10 },
+  { image: productsmen11 },
+  { image: productsmen12 },
+  { image: productsmen13 },
+  { image: productsmen14 },
+  { image: productsmen15 },
+  { image: productsmen16 },
+  { image: productsmen17 },
+  { image: productsmen18 },
+  { image: productsmen19 },
+  { image: productsmen20 },
+  { image: productsmen21 },
+  { image: productsmen22 },
+  { image: productsmen23 },
+  { image: productsmen24 },
+  { image: productsmen25 },
+  { image: productsmen26 },
+  { image: productsmen27 }
+]
 
 
-const ProductsForMen = () => {
+const ProductsForMen = ({ perview, roundedphoto }) => {
   const [showButtons, setShowButtons] = useState(false)
-  const allData = [
-    { image: productsmen1 },
-    { image: productsmen2 },
-    { image: productsmen3 },
-    { image: productsmen4 },
-    { image: productsmen4 },
-    { image: productsmen5 },
-    { image: productsmen6 },
-    { image: productsmen7 },
-    { image: productsmen8 },
-    { image: productsmen9 },
-    { image: productsmen10 },
-    { image: productsmen11 },
-    { image: productsmen12 },
-    { image: productsmen13 },
-    { image: productsmen14 },
-    { image: productsmen15 },
-    { image: productsmen16 },
-    { image: productsmen17 },
-    { image: productsmen18 },
-    { image: productsmen19 },
-    { image: productsmen20 },
-    { image: productsmen21 },
-    { image: productsmen22 },
-    { image: productsmen23 },
-    { image: productsmen24 },
-    { image: productsmen25 },
-    { image: productsmen26 },
-    { image: productsmen27 }
-  ]
 
-  const setSrv = (data) => {
-    console.log(data)
-  }
 
   return (
     <div className='relative'>
       <>
         <Swiper
-          slidesPerView={5}
-          spaceBetween={10}
-          // pagination={{
-          //   clickable: true,
-          // }}
+          slidesPerView={perview ? perview : 5}
+          spaceBetween={30}
 
-          navigation={true}
-          // pagination={{ clickable: true }}
-
-          modules={[Pagination, Navigation, Scrollbar, A11y]}
-
-
+          modules={[]}
           className="mySwiper"
+
         >
 
           {
@@ -103,20 +93,20 @@ const ProductsForMen = () => {
               <SwiperSlide
 
               >
-                <div className='group   overflow-hidden transition ease-in-out delay-150 justify-center ' >
-                  <div className='group-hover:border cartsystem  p-3 ' >
+                <div className=' cursor-pointer   overflow-hidden transition ease-in-out delay-150 justify-center ' >
+                  <div className='select-none cartsystem  p-3 ' >
                     <div className='overflow-hidden'>
                       <img
-                        className="scale-100 hover:scale-105 ease-in duration-500"
+                        className={`ease-in duration-500 ${roundedphoto && roundedphoto}`}
                         src={singleProduct.image} alt='' />
                       <hr className=' my-3' />
-                      <div className='text-start flex  flex-col gap-2'>
-                        <h4 className='uppercase text-sm font-bold'>Nike zoom kdx ep</h4>
+                      <div className='text-start flex  group flex-col gap-2'>
+                        <h4 className='uppercase text-sm font-bold '>Nike zoom kdx ep</h4>
                         <p className='text-xs  text-slate-500'>Fashion Manufacturer</p>
                         <div className='flex items-center gap-3'><p className='font-semibold'>$270.00</p>
                           <span className='line-through text-xs text-slate-500'>$300.30</span>
                         </div>
-                        <div className=' -mt-10 group-hover:mt-0  group-hover:block opacity-0 group-hover:opacity-100 transition-all duration-500   justify-center items-center ' >
+                        <div className=' -mt-10 group-hover:z-10  group-hover:mt-0  group-hover:block opacity-0 group-hover:opacity-100 transition-all duration-500   justify-center items-center ' >
                           <hr className='my-2' />
                           <div className='flex  items-center justify-between'>
                             <div>

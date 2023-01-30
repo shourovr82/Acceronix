@@ -13,11 +13,11 @@ const ProductsTab = () => {
 
         <div>
           <div class="py-10 flex items-center justify-start gap-6 ">
-            <label onClick={() => setProductTab(1)} class="font-semibold cursor-pointer text-lg" id="one-tab" for="one">For Men</label>
+            <label onClick={() => setProductTab(1)} className={`cursor-pointer   ${productTab === 1 ? 'text-xl font-bold  text-black' : 'text-lg  text-slate-400 font-semibold'}`} id="one-tab" for="one">For Men</label>
             <span className='text-xl font-bold text-slate-400'>/</span>
-            <label onClick={() => setProductTab(2)} class="font-semibold cursor-pointer text-lg" id="two-tab" for="two">For Women</label>
+            <label onClick={() => setProductTab(2)} className={`cursor-pointer   ${productTab === 2 ? 'text-xl font-bold  text-black' : 'text-lg  text-slate-400 font-semibold'}`} id="two-tab" for="two">For Women</label>
             <span className='text-xl font-bold text-slate-400'>/</span>
-            <label onClick={() => setProductTab(3)} class="font-semibold cursor-pointer text-lg" id="three-tab" for="three">For Kids</label>
+            <label onClick={() => setProductTab(3)} className={`cursor-pointer   ${productTab === 3 ? 'text-xl font-bold  text-black' : 'text-lg  text-slate-400 font-semibold'}`} id="three-tab" for="three">For Kids</label>
             <hr className='w-[68%] mt-2' />
           </div>
         </div>
@@ -32,33 +32,19 @@ const ProductsTab = () => {
 
           {productTab === 2 &&
             <div class="" id="">
-              <ProductsForWomen />
+              {/* <ProductsForWomen /> */}
+              <ProductsForMen />
             </div>
           }
           {productTab === 3 &&
             <div class="" id="">
-              <ProductsForKids />
+              {/* <ProductsForKids /> */}
+              <ProductsForMen />
             </div>
           }
         </div>
 
-
       </div>
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </div >
   );
 };
