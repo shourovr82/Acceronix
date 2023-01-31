@@ -1,17 +1,210 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NavbarTop from './NavbarTop';
 import './Navbar.css';
-import { BsSearch } from 'react-icons/bs';
+import { BsChevronDown, BsSearch } from 'react-icons/bs';
 import { BiUser } from 'react-icons/bi';
 import { FaRegHeart } from 'react-icons/fa';
 import { MdOutlineShoppingCart } from 'react-icons/md';
+import NavItems from './NavItems';
 
 
 const Navbar = () => {
+  const navlists = [
+    {
+      nav: 'Home'
+    },
+    {
+      nav: 'About'
+    },
+    {
+      nav: 'Services'
+    },
+    {
+      nav: 'Dashbboard'
+    },
+  ]
+  const [openNav, setOpenNav] = useState(false);
+
   return (
-    <div className='  '>
-      {/* nav top sections bg-gradient-to-b from-[#633ed9] to-[#200d89] */}
-      <NavbarTop />
+
+
+    <header>
+      <div class="navcontainer px-3  z-10">
+        <div class="flex  justify-between items-center">
+          {/* <!-- menu --> */}
+          <div>
+            <p href="/" class="text-start">ACCERONIX</p>
+          </div>
+          <nav className='flex justify-start '>
+            <ul class="d-flex ">
+              <li><a href="/">Home</a></li>
+
+              {/*  for men */}
+              <li className=' relative'>
+                <a href="/" className='flex gap-2'>
+                  <span>For Men</span>
+                  <span>
+                    <BsChevronDown />
+                  </span>
+                </a>
+                {/* <!-- mega-menu --> */}
+                <ul class="w-[500px]  drop-down top-full bg-[#2f2f2f] shadow-lg rounded-md   Mega-Menu d-flex justify-content-between">
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                </ul>
+              </li>
+
+              {/*  for women */}
+              <li className=' relative'>
+                <a href="/" className='flex gap-2'>
+                  <span>For Women</span>
+                  <span>
+                    <BsChevronDown />
+                  </span>
+                </a>
+                {/* <!-- mega-menu --> */}
+                <ul class="w-[500px]  drop-down top-full bg-[#2f2f2f] shadow-lg rounded-md   Mega-Menu d-flex justify-content-between">
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-item">
+                    <h3>list-1</h3>
+                    <ul>
+                      <li><a href="/">link-1</a></li>
+                      <li><a href="/">link-2</a></li>
+                      <li><a href="/">link-3</a></li>
+                      <li><a href="/">link-4</a></li>
+                    </ul>
+                  </div>
+                </ul>
+              </li>
+
+              <li><a href="/">For Kids</a></li>
+
+            </ul>
+          </nav>
+          {/* currency language setting */}
+          <div>
+            <div>
+              <div class="sec-center">
+                <input class="dropdown-menu" type="checkbox" id="dropdown-menu" name="dropdown-menu" />
+                <label class="for-dropdown-menu" for="dropdown-menu">dropdown-menu Menu <i class="uil uil-arrow-down"></i></label>
+                <div class="section-dropdown-menu">
+                  <a href="#">dropdown-menu Link <i class="uil uil-arrow-right"></i></a>
+                  <input class="dropdown-menu-sub" type="checkbox" id="dropdown-menu-sub" name="dropdown-menu-sub" />
+                  <label class="for-dropdown-menu-sub" for="dropdown-menu-sub">dropdown-menu Sub <i class="uil uil-plus"></i></label>
+                  <div class="section-dropdown-menu-sub">
+                    <a href="#">dropdown-menu Link <i class="uil uil-arrow-right"></i></a>
+                    <a href="#">dropdown-menu Link <i class="uil uil-arrow-right"></i></a>
+                  </div>
+                  <a href="#">dropdown-menu Link <i class="uil uil-arrow-right"></i></a>
+                  <a href="#">dropdown-menu Link <i class="uil uil-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div>
+            <h4 className='button'>Login</h4>
+          </div>
+        </div>
+      </div>
 
       {/* <div className='flex px-2 py-2 gap-10 border-b  items-center justify-between'>
         <div className='w-[10%]'>
@@ -81,9 +274,27 @@ const Navbar = () => {
 
 
       </div> */}
+    </header>
 
-    </div >
+
+
+
   );
 };
 
 export default Navbar;
+
+
+// {/* nav top sections bg-gradient-to-b from-[#633ed9] to-[#200d89] */ }
+// {/* <NavbarTop /> */ }
+
+// dark mode ====================
+
+// {/* <input class="dark-light" type="checkbox" id="dark-light" name="dark-light" />
+//               <label for="dark-light"></label>
+
+//               <div class="light-back"></div>
+
+//               <a href="https://front.codes/" class="logo" target="_blank">
+//                 <img src="https://assets.codepen.io/1462889/fcy.png" alt="" />
+//               </a> */}
