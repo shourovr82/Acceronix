@@ -1,5 +1,6 @@
 import React from 'react';
 import SelectBoxSimple from '../../SelectBox/SelectBoxSimple';
+import NavbarSettings from './NavbarSettings';
 
 const currency = [
   { name: 'USD $' },
@@ -7,20 +8,27 @@ const currency = [
   { name: 'BDT ৳' },
   { name: 'INR ₹' },
 ]
+const language = [
+  { name: 'ENGLISH' },
+  { name: 'BANGLA' },
+  { name: 'HINDI' },
+  { name: 'SPANISH' },
+]
 const NavbarRightItems = () => {
 
 
   return (
-    <div className=' '>
+    <div className=' flex items-center  divide-x divide-[#faf2f228]  '>
       {/* select currency */}
-      <div className=" ">
-        <SelectBoxSimple people={currency} />
+      <div className="">
+        <SelectBoxSimple selectboxdata={currency} />
       </div>
-
-      <div>
+      {/* select language */}
+      <div className=''>
+        <SelectBoxSimple selectboxdata={language} />
       </div>
       <div>
-
+        <NavbarSettings />
       </div>
     </div>
   );

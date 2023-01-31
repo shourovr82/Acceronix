@@ -54,12 +54,15 @@
     width: 44px;
   }
 
+
+
   .wishlistbadge {
     position: absolute;
-    top: -16px;
-    right: -18px;
-    min-width: 35px;
-    height: 35px;
+    top: -12px;
+    right: 2px;
+    border: none;
+    width: 20px;
+    height: 20px;
     padding: 0 7px;
     font-size: 11px;
     transition: transform 0.1s, background-color 0.2s;
@@ -120,35 +123,12 @@
 
 
 
-/* header start */
-header {
-  background-color: #2f333a;
-  color: aliceblue;
-}
 
-.logo {
-  font-size: 20px;
-  font-weight: 900;
-}
 
-header nav ul {
-  list-style: none;
-}
 
-header nav>ul>li {
-  font-size: 22px;
-  padding: 15px 10px;
-}
 
-header nav>ul>li a span i {
-  font-size: 20px;
-  margin-left: 5px;
-  vertical-align: middle;
-}
 
-header nav>ul>li:hover>a {
-  color: rgba(240, 248, 255, 0.595);
-}
+
 
 header .button {
   background-color: #fff;

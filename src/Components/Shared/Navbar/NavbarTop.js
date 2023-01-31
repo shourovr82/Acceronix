@@ -12,29 +12,29 @@ const NavbarTop = () => {
 
   return (
 
-    <header>
-      <div class="navcontainer  px-3  z-10">
-        <div class="flex  justify-between  items-center">
+    <header className='bg-[#2f333a] py-0.5'>
+      <div className="navcontainer  px-3  z-10">
+        <div className="lg:flex  justify-between  items-center">
           {/* <!-- menu --> */}
           <div>
-            <p href="/" class="text-start">ACCERONIX</p>
+
           </div>
           {/* main nav items */}
           <nav className='flex justify-start  '>
-            <ul class="d-flex ">
-              <li><a href="/" className='text-xs font-semibold uppercase'>Home</a></li>
+            <ul className="d-flex ">
+              <li><a href="/" className='text-[11px] font-semibold uppercase'>Home</a></li>
 
               {/*  for men */}
               <li className=' relative'>
                 <a href="/" className='flex gap-1'>
-                  <span className='text-xs font-semibold uppercase'>For Men</span>
+                  <span className='text-[11px] font-semibold uppercase'>For Men</span>
                   <span>
                     <BiChevronDown className='text-lg' />
                   </span>
                 </a>
                 {/* <!-- mega-menu --> */}
-                <ul class="w-[500px]  drop-down top-full bg-[#2f2f2f] shadow-lg rounded-md   Mega-Menu d-flex justify-content-between">
-                  <div class="mega-item">
+                <ul className="w-[500px]  drop-down top-full bg-[#2f2f2f] shadow-lg rounded-md   Mega-Menu d-flex justify-content-between">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -43,7 +43,7 @@ const NavbarTop = () => {
                       <li><a href="/">link-4</a></li>
                     </ul>
                   </div>
-                  <div class="mega-item">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -52,7 +52,7 @@ const NavbarTop = () => {
                       <li><a href="/">link-4</a></li>
                     </ul>
                   </div>
-                  <div class="mega-item">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -61,7 +61,7 @@ const NavbarTop = () => {
                       <li><a href="/">link-4</a></li>
                     </ul>
                   </div>
-                  <div class="mega-item">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -70,7 +70,7 @@ const NavbarTop = () => {
                       <li><a href="/">link-4</a></li>
                     </ul>
                   </div>
-                  <div class="mega-item">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -79,7 +79,7 @@ const NavbarTop = () => {
                       <li><a href="/">link-4</a></li>
                     </ul>
                   </div>
-                  <div class="mega-item">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -94,14 +94,14 @@ const NavbarTop = () => {
               {/*  for women */}
               <li className=' relative'>
                 <a href="/" className='flex gap-1'>
-                  <span className='text-xs font-semibold uppercase'>For Women</span>
+                  <span className='text-[11px] font-semibold uppercase'>For Women</span>
                   <span>
                     <BiChevronDown className='text-lg' />
                   </span>
                 </a>
                 {/* <!-- mega-menu --> */}
-                <ul class="w-[500px]  drop-down top-full bg-[#2f2f2f] shadow-lg rounded-md   Mega-Menu d-flex justify-content-between">
-                  <div class="mega-item">
+                <ul className="w-[500px]  drop-down top-full bg-[#2f2f2f] shadow-lg rounded-md   Mega-Menu d-flex justify-content-between">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -110,7 +110,7 @@ const NavbarTop = () => {
                       <li><a href="/">link-4</a></li>
                     </ul>
                   </div>
-                  <div class="mega-item">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -119,7 +119,7 @@ const NavbarTop = () => {
                       <li><a href="/">link-4</a></li>
                     </ul>
                   </div>
-                  <div class="mega-item">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -128,7 +128,7 @@ const NavbarTop = () => {
                       <li><a href="/">link-4</a></li>
                     </ul>
                   </div>
-                  <div class="mega-item">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -137,7 +137,7 @@ const NavbarTop = () => {
                       <li><a href="/">link-4</a></li>
                     </ul>
                   </div>
-                  <div class="mega-item">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -146,7 +146,7 @@ const NavbarTop = () => {
                       <li><a href="/">link-4</a></li>
                     </ul>
                   </div>
-                  <div class="mega-item">
+                  <div className="mega-item">
                     <h3>list-1</h3>
                     <ul>
                       <li><a href="/">link-1</a></li>
@@ -158,8 +158,8 @@ const NavbarTop = () => {
                 </ul>
               </li>
 
-              <li><a href="/" className='text-xs font-semibold uppercase'>For Kids</a></li>
-              <li><a href="/" className='text-xs font-semibold uppercase'>Categories</a></li>
+              <li><a href="/" className='text-[11px] font-semibold uppercase'>For Kids</a></li>
+              <li><a href="/" className='text-[11px] font-semibold uppercase'>Categories</a></li>
 
             </ul>
           </nav>
@@ -168,80 +168,11 @@ const NavbarTop = () => {
             < NavbarRightItems />
           </div>
 
-          <div>
-            <h4 className='button'>Login</h4>
-          </div>
+
         </div>
       </div>
 
-      {/* <div className='flex px-2 py-2 gap-10 border-b  items-center justify-between'>
-        <div className='w-[10%]'>
-          <h1 className='uppercase text-[#200d89] font-bold text-2xl font-serif'>Acceronix</h1>
-        </div>
 
-
-        <div className="relative w-[50%] flex items-center   border  m-0 p-0 h-10  focus-within:shadow-lg bg-white overflow-hidden">
-
-
-
-          <div className="grid place-items-center border-r  px-2 h-full  text-gray-300">
-            <select id="Com" className="text-base   text-gray-800 outline-none py-2 ">
-              <option value="com" defaultChecked>All Categories</option>
-              <option value="net">net</option>
-              <option value="org">org</option>
-              <option value="io">io</option>
-            </select>
-          </div>
-          <input
-            className="peer  h-full px-2  w-full text-center outline-none text-sm text-gray-700 pr-2"
-            type="text"
-            id="search"
-            placeholder="Search for products..." />
-
-          <div className="flex justify-center items-center h-full  w-32  bg-gradient-to-r from-[#633ed9] to-[#200d89]   ">
-            <button ><BsSearch className='text-white ' /></button>
-          </div>
-
-
-        </div>
-
-
-
-        <div className='w-[20%]'>
-
-          <div className='flex w-full   justify-end items-center'>
-            <div className='flex items-center justify-between gap-2'>
-              <div>
-                <div>
-                  <p><BiUser className='text-2xl' /></p>
-                </div>
-              </div>
-              <div>
-                <p className='text-xs  text-slate-500'>Sign in</p>
-                <p className='text-sm font-semibold'>Account</p>
-              </div>
-            </div>
-            <div>
-              <div className="wishlisticon">
-                <div className="wishlistbadge ">4</div>
-                <FaRegHeart className="wishlisticonmain text-2xl" alt="icon" />
-              </div>
-            </div>
-            <div className='flex items-center  justify-between'>
-              <div className="wishlisticon ">
-                <div className="wishlistbadge ">2</div>
-                <MdOutlineShoppingCart className="wishlisticonmain text-2xl" alt="icon" />
-              </div>
-              <div className=''>
-                <p className='text-xs text-slate-500'>Total</p>
-                <h2 className='text-sm font-bold'>$0.00</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-      </div> */}
     </header>
 
 

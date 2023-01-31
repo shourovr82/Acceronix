@@ -3,21 +3,23 @@ import { Listbox, Transition } from '@headlessui/react'
 import { AiOutlineCheck } from 'react-icons/ai';
 import { BsCheckLg, BsChevronExpand } from 'react-icons/bs';
 import { FaSortDown } from 'react-icons/fa';
+import { FiChevronDown } from 'react-icons/fi';
 
 
 
-const SelectBoxSimple = ({ people }) => {
-  const [selected, setSelected] = useState(people[0])
+const SelectBoxSimple = ({ selectboxdata }) => {
+  const [selected, setSelected] = useState(selectboxdata[0])
 
   return (
     <Listbox value={selected} onChange={setSelected}>
       <div className="relative  ">
-        <Listbox.Button className="flex items-center justify-between gap-2 relative
-          cursor-pointer  text-sm">
-          <span className="block truncate">{selected.name}</span>
-          <span className="mb-1">
-            <FaSortDown
-              className="text-sm text-gray-400"
+        <Listbox.Button className="inline-flex w-full  rounded-md py-2    px-2
+           text-[11px] uppercase  hover:bg-[#1a19193a]  gap-2 ">
+          <span className="inline-flex  w-full justify-center rounded-md  
+           text-[11px] uppercase text-white  hover:bg-[#1a19193a]  gap-2 ">{selected.name}</span>
+          <span className="">
+            <FiChevronDown
+              className="text-sm  text-violet-200 hover:text-violet-100"
             />
           </span>
         </Listbox.Button>
@@ -27,12 +29,12 @@ const SelectBoxSimple = ({ people }) => {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <Listbox.Options className="absolute  mt-1  w-full overflow-hidden  rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-10 sm:text-sm">
-            {people.map((person, personIdx) => (
+          <Listbox.Options className="absolute w-full  mt-1   overflow-hidden  rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none px-12 sm:text-sm">
+            {selectboxdata.map((person, personIdx) => (
               <Listbox.Option
                 key={personIdx}
                 className={({ active }) =>
-                  `relative  select-none py-2 flex   justify-center cursor-pointer w-full text-center  ${active ? 'bg-amber-100 text-amber-900' : 'text-gray-900 font-bold  '
+                  `relative  select-none py-2 flex text-[11px]    justify-center cursor-pointer w-full text-center  ${active ? 'bg-amber-100 text-amber-900' : 'text-gray-900 font-bold  '
                   }`
                 }
                 value={person}
@@ -40,7 +42,7 @@ const SelectBoxSimple = ({ people }) => {
                 {({ selected }) => (
                   <div className={`flex justify-between`}>
                     <span
-                      className={`block truncate ${selected ? 'font-semibold  ' : 'font-semibold  '
+                      className={`block truncate ${selected ? 'font-bold text-[#3920a7]  ' : 'font-semibold  '
                         }`}
                     >
                       {person.name}
