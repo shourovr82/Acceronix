@@ -40,7 +40,7 @@ const LatestBlogs = () => {
 
   return (
     <div>
-      <div class="py-10 flex items-center justify-start gap-6 ">
+      <div className="py-10 flex items-center justify-start gap-6 ">
         <label className='cursor-pointer text-lg font-semibold'>Latest Blogs</label>
         <hr className='w-[80%] mt-2' />
       </div>
@@ -57,8 +57,8 @@ const LatestBlogs = () => {
             className={LatestBlogStyle.swiper}
           >
             {
-              blogdata?.map(singleBlog => (
-                <SwiperSlide>
+              blogdata?.map((singleBlog, index) => (
+                <SwiperSlide key={index}>
                   <div>
                     <div>
                       <img src={singleBlog.image} alt="" />
@@ -98,10 +98,10 @@ export default LatestBlogs;
 
 
 // {/*
-//                     <div class="card 1st_card">
-//                       <div class="card-content">
-//                         <p class="location">London</p>
-//                         <h1 class="degree">20<sup>o</sup>   </h1>
-//                         <p class="weather-status">Thumber</p>
+//                     <div className="card 1st_card">
+//                       <div className="card-content">
+//                         <p className="location">London</p>
+//                         <h1 className="degree">20<sup>o</sup>   </h1>
+//                         <p className="weather-status">Thumber</p>
 //                       </div>
 //                     </div> */}

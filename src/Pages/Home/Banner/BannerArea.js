@@ -55,8 +55,8 @@ const BannerArea = () => {
           modules={[Pagination, Autoplay, Navigation]}
           className="h-[420px] "
         >
-          {allData && allData?.map(photodata =>
-            <SwiperSlide>
+          {allData && allData?.map((photodata, index) =>
+            <SwiperSlide key={index}>
               <div>
                 <img src={photodata?.image} className='object-cover' alt="" />
               </div>

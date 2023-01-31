@@ -10,14 +10,11 @@ import { Grid, Pagination } from 'swiper';
 import ProductsForMen, { allData } from '../Productsforpeople/ProductsForMen';
 
 const FeaturedProducts = () => {
-  console.log(allData)
-  const newsrv =
-    allData.map(f => console.log(f))
 
 
   return (
     <div className=' overflow-hidden'>
-      <div class="py-10 flex items-center justify-start gap-6 ">
+      <div className="py-10 flex items-center justify-start gap-6 ">
         <label className='cursor-pointer text-lg font-semibold'>Featured Products</label>
         <hr className='w-[60%] mt-2' />
       </div>

@@ -89,8 +89,8 @@ const ProductsForMen = ({ perview, roundedphoto }) => {
         >
 
           {
-            allData && allData?.map(singleProduct =>
-              <SwiperSlide
+            allData && allData?.map((singleProduct, index) =>
+              <SwiperSlide key={index}
 
               >
                 <div className=' cursor-pointer   overflow-hidden transition ease-in-out delay-150 justify-center ' >

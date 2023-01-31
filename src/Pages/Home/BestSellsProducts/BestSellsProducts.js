@@ -15,7 +15,7 @@ import ProductsForMen, { allData } from '../Productsforpeople/ProductsForMen';
 const BestSellsProducts = () => {
   return (
     <div className=''>
-      <div class="py-10 flex items-center justify-start gap-6 ">
+      <div className="py-10 flex items-center justify-start gap-6 ">
         <label className='cursor-pointer text-lg font-semibold'>Best Selling Products</label>
         <hr className='w-[60%] mt-2' />
       </div>

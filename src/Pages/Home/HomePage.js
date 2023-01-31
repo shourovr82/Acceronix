@@ -12,9 +12,8 @@ import SpecialProducts from './SpecialProducts/SpecialProducts';
 const HomePage = () => {
   return (
     <div className=' bg-white px-3 flex flex-col gap-3'>
-
       {/* banner area */}
-      <div className='gap-3 pb-2'>
+      <div className='gap-3 pb-2 mt-5'>
         <BannerArea />
       </div>
 

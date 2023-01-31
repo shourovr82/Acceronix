@@ -18,8 +18,8 @@ const CategoriesMenu = () => {
 
 
         <div className='category-menus mx-3  '>
-          <div class="header-menu ">
-            <div class="primary-menu py-3  ">
+          <div className="header-menu ">
+            <div className="primary-menu py-3  ">
               <ul className='flex flex-col gap-5  '>
                 <li><p className='text-slate-500 flex  items-center justify-between text-sm'>Cell Phones  <RxChevronRight className='text-slate-500 text-xl ' /></p></li>
                 <li><p className='text-slate-500  text-sm flex  items-center justify-between '>Computer & Accessories  <RxChevronRight className='text-slate-500 text-xl ' /></p></li>

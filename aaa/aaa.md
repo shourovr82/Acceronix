@@ -209,10 +209,10 @@ text {
   }
 }
 <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 400 400">
-  <text y="50%" class="w" font-size="20px">W</text>
-  <text x="22%" y="50%" class="a">A</text>
-  <text x="40%" y="50%" class="v">V</text>
-  <text x="60%" y="50%" class="y">Y</text>
+  <text y="50%" className="w" font-size="20px">W</text>
+  <text x="22%" y="50%" className="a">A</text>
+  <text x="40%" y="50%" className="v">V</text>
+  <text x="60%" y="50%" className="y">Y</text>
 </svg> -->
 
 ===============================================================

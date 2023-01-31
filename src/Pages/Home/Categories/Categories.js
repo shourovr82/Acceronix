@@ -7,12 +7,12 @@ const Categories = () => {
     <div className='flex  gap-3'>
       <div className='w-[20%]'><CategoriesMenu /></div>
 
-      <div class="grid  w-full grid-cols-5 gap-3">
-        <div class="col-span-3">
+      <div className="grid  w-full grid-cols-5 gap-3">
+        <div className="col-span-3">
           <CategoryMainItem />
         </div>
         {/* right category */}
-        <div class=" flex flex-col gap-3 h-full  col-span-2 ">
+        <div className=" flex flex-col gap-3 h-full  col-span-2 ">
           <div className=' categorysecond h-full p-2 px-3'>
             <div className='flex gap-5 flex-col '>
               <h1 className='text-2xl font-bold'>JBL Music <br /> Speaker</h1>
