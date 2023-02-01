@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BiChevronDown } from 'react-icons/bi';
-import { BsChevronDown } from 'react-icons/bs';
+import { RiMenu2Line } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import NavbarRightItems from './NavbarRightItems';
 import './Navbarrightside.css'
@@ -13,6 +13,10 @@ const NavbarTop = () => {
   return (
 
     <header className='bg-[#2f333a] py-0.5'>
+      <div className='flex lg:hidden justify-center '>
+        <h1 className='uppercase text-[#fff] font-bold text-2xl font-serif'>Acceronix</h1>
+      </div>
+
       <div className="navcontainer  px-3  z-10">
         <div className="lg:flex  justify-between  items-center">
           {/* <!-- menu --> */}
@@ -20,149 +24,166 @@ const NavbarTop = () => {
 
           </div>
           {/* main nav items */}
-          <nav className='flex justify-start  '>
-            <ul className="d-flex ">
-              <li><a href="/" className='text-[11px] font-semibold uppercase'>Home</a></li>
 
-              {/*  for men */}
-              <li className=' relative'>
-                <a href="/" className='flex gap-1'>
-                  <span className='text-[11px] font-semibold uppercase'>For Men</span>
-                  <span>
-                    <BiChevronDown className='text-lg' />
-                  </span>
-                </a>
-                {/* <!-- mega-menu --> */}
-                <ul className="w-[500px]  drop-down top-full bg-[#2f2f2f] shadow-lg rounded-md   Mega-Menu d-flex justify-content-between">
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                </ul>
-              </li>
+          <div>
+            <div className='w-full  py-2'>
+              <button
+                onClick={() => setHamburgerAnimation(!hamburgerAnimation)}
+                className='  z-50  bg-gradient-to-r from-[#633ed9] to-[#200d89] text-white flex items-center  p-2   font-semibold   rounded-md justify-between w-full px-2 '>
+                Category
+                <span><RiMenu2Line /></span>
+              </button>
 
-              {/*  for women */}
-              <li className=' relative'>
-                <a href="/" className='flex gap-1'>
-                  <span className='text-[11px] font-semibold uppercase'>For Women</span>
-                  <span>
-                    <BiChevronDown className='text-lg' />
-                  </span>
-                </a>
-                {/* <!-- mega-menu --> */}
-                <ul className="w-[500px]  drop-down top-full bg-[#2f2f2f] shadow-lg rounded-md   Mega-Menu d-flex justify-content-between">
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                  <div className="mega-item">
-                    <h3>list-1</h3>
-                    <ul>
-                      <li><a href="/">link-1</a></li>
-                      <li><a href="/">link-2</a></li>
-                      <li><a href="/">link-3</a></li>
-                      <li><a href="/">link-4</a></li>
-                    </ul>
-                  </div>
-                </ul>
-              </li>
+            </div>
 
-              <li><a href="/" className='text-[11px] font-semibold uppercase'>For Kids</a></li>
-              <li><a href="/" className='text-[11px] font-semibold uppercase'>Categories</a></li>
 
-            </ul>
-          </nav>
+
+            <nav className='flex justify-start relative  '>
+              <ul className={`flex flex-col   group-hover:block  transition-all duration-500   justify-center items-center  bg-black z-10  border w-full  lg:flex-row ${hamburgerAnimation ? ' top-0 opacity-100  ' : '-mt-10 opacity-0 '}`}>
+                <li><a href="/" className='text-[11px] font-semibold uppercase'>Home</a></li>
+
+                {/*  for men */}
+                <li className=' relative'>
+                  <a href="/" className='flex gap-1'>
+                    <span className='text-[11px] font-semibold uppercase'>For Men</span>
+                    <span>
+                      <BiChevronDown className='text-lg' />
+                    </span>
+                  </a>
+                  {/* <!-- mega-menu --> */}
+                  <ul className="w-[500px]  drop-down top-full bg-[#2f2f2f] shadow-lg rounded-md   Mega-Menu d-flex justify-content-between">
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </li>
+
+                {/*  for women */}
+                <li className=' relative'>
+                  <a href="/" className='flex gap-1'>
+                    <span className='text-[11px] font-semibold uppercase'>For Women</span>
+                    <span>
+                      <BiChevronDown className='text-lg' />
+                    </span>
+                  </a>
+                  {/* <!-- mega-menu --> */}
+                  <ul className="w-[500px]  drop-down top-full bg-[#2f2f2f] shadow-lg rounded-md   Mega-Menu d-flex justify-content-between">
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                    <div className="mega-item">
+                      <h3>list-1</h3>
+                      <ul>
+                        <li><a href="/">link-1</a></li>
+                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">link-3</a></li>
+                        <li><a href="/">link-4</a></li>
+                      </ul>
+                    </div>
+                  </ul>
+                </li>
+
+                <li><a href="/" className='text-[11px] font-semibold uppercase'>For Kids</a></li>
+                <li><a href="/" className='text-[11px] font-semibold uppercase'>Categories</a></li>
+
+              </ul>
+            </nav>
+          </div>
+
+
           {/* currency language setting */}
           <div className=''>
             < NavbarRightItems />
