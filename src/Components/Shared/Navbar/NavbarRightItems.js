@@ -18,7 +18,7 @@ const NavbarRightItems = () => {
 
 
   return (
-    <div className=' flex items-center  divide-x divide-[#faf2f228]  '>
+    <div className=' flex  justify-center items-center  divide-x divide-[#faf2f228]'>
       {/* select currency */}
       <div className="">
         <SelectBoxSimple selectboxdata={currency} />

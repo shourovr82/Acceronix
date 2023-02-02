@@ -26,7 +26,7 @@ const NavbarTop = () => {
           {/* main nav items */}
 
           <div>
-            <div className='w-full  py-2'>
+            <div className='w-full lg:hidden  py-2'>
               <button
                 onClick={() => setHamburgerAnimation(!hamburgerAnimation)}
                 className='  z-50  bg-gradient-to-r from-[#633ed9] to-[#200d89] text-white flex items-center  p-2   font-semibold   rounded-md justify-between w-full px-2 '>
@@ -39,7 +39,7 @@ const NavbarTop = () => {
 
 
             <nav className='flex justify-start relative  '>
-              <ul className={`flex flex-col   group-hover:block  transition-all duration-500   justify-center items-center  bg-black z-10  border w-full  lg:flex-row ${hamburgerAnimation ? ' top-0 opacity-100  ' : '-mt-10 opacity-0 '}`}>
+              <ul className={`flex flex-col   group-hover:block  transition-all duration-500   justify-center items-center  max-md:bg-black z-10   w-full  lg:flex-row ${hamburgerAnimation ? ' max-md:translate-y-0 ' : ' max-md:-mt-96 max-md:hidden'}`}>
                 <li><a href="/" className='text-[11px] font-semibold uppercase'>Home</a></li>
 
                 {/*  for men */}
