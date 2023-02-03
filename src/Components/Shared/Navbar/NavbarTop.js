@@ -64,8 +64,8 @@ const NavbarTop = () => {
                     <div className="mega-item">
                       <h3>list-1</h3>
                       <ul>
-                        <li><a href="/">link-1</a></li>
-                        <li><a href="/">link-2</a></li>
+                        <li><a href="/">New Products</a></li>
+                        <li><a href="/">Latest Product</a></li>
                         <li><a href="/">link-3</a></li>
                         <li><a href="/">link-4</a></li>
                       </ul>
