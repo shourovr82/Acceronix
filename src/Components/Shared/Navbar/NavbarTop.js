@@ -14,7 +14,7 @@ const NavbarTop = () => {
 
     <header className='bg-[#2f333a] py-0.5'>
       <div className='flex lg:hidden justify-center '>
-        <h1 className='uppercase text-[#fff] font-bold text-2xl font-serif'>Acceronix</h1>
+        <h1 className='uppercase text-[#fff] font-bold text-2xl font-serif'>Acceronix </h1>
       </div>
 
       <div className="navcontainer  px-3  z-10">
@@ -30,7 +30,7 @@ const NavbarTop = () => {
               <button
                 onClick={() => setHamburgerAnimation(!hamburgerAnimation)}
                 className='  z-50  bg-gradient-to-r from-[#633ed9] to-[#200d89] text-white flex items-center  p-2   font-semibold   rounded-md justify-between w-full px-2 '>
-                Category
+                Categories
                 <span><RiMenu2Line /></span>
               </button>
 
