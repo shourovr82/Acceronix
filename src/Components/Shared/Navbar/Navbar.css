@@ -418,7 +418,7 @@ header nav>ul>li:hover .drop-down {
   border-bottom: 8px solid #fff;
 }
 
-a {
+/* a {
   position: relative;
   color: #fff;
   transition: all 200ms linear;
@@ -440,11 +440,9 @@ a {
   align-items: center;
   justify-content: space-between;
   -ms-flex-pack: distribute;
-}
+} */
 
-.dark-light:checked~.sec-center .section-dropdown-menu a {
-  color: #102770;
-}
+
 
 a:hover {
   color: #102770;
@@ -456,9 +454,7 @@ a:hover {
   background-color: #102770;
 }
 
-a .uil {
-  font-size: 22px;
-}
+
 
 .dropdown-menu-sub:checked+label,
 .dropdown-menu-sub:not(:checked)+label {

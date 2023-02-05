@@ -1,12 +1,13 @@
 
 import React, { useState } from 'react';
 import NavbarTop from './NavbarTop';
-import './Navbar.css';
+// import './Navbar.css';
 import { BsChevronDown, BsSearch } from 'react-icons/bs';
 import { BiUser } from 'react-icons/bi';
 import { FaRegHeart } from 'react-icons/fa';
 import { MdOutlineShoppingCart } from 'react-icons/md';
 import NavItems from './NavItems';
+import NavbarMain from './NavbarMain';
 
 
 const Navbar = () => {
@@ -31,7 +32,7 @@ const Navbar = () => {
 
     <div >
       <div className='border-b-[1px] border-[#000000b5]'>
-        <NavbarTop />
+        <NavbarMain />
       </div>
       <div>
         <div className='flex flex-col-reverse  lg:flex-row bg-[#2f333a] px-2 py-2 lg:gap-10 gap-3 border-b  items-center justify-between'>

@@ -14,12 +14,12 @@ const HomePage = () => {
     <div className=' bg-white px-3 flex flex-col gap-3'>
       {/* banner area */}
       <div className='gap-3 pb-2 mt-3'>
-        <BannerArea />
+        {/* <BannerArea /> */}
       </div>
 
       {/*  category  */}
       <div className=''>
-        <Categories />
+        {/* <Categories /> */}
       </div>
 
       {/*  latest products */}

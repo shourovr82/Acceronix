@@ -1,0 +1,47 @@
+.new-header {
+  background-color: rgb(24, 7, 121);
+}
+
+.new-logo {
+  color: white;
+  height: 40px;
+}
+
+.new-search input {
+  height: 35px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.new-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 10px;
+  transition: .5s;
+}
+
+.new-icons a:hover {
+  color: aqua;
+}
+
+.new-links {
+  background-color: #180779;
+  transition: .6s;
+}
+
+.new-links a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.showmylinks {
+  height: 50vh;
+}
