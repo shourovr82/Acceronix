@@ -18,7 +18,7 @@ const NavbarRightItems = () => {
 
 
   return (
-    <div className=' flex  justify-center items-center  divide-x divide-[#faf2f228]'>
+    <div className=' flex  justify-between items-center w-full'>
       {/* select currency */}
       <div className="">
         <SelectBoxSimple selectboxdata={currency} />
@@ -26,9 +26,6 @@ const NavbarRightItems = () => {
       {/* select language */}
       <div className=''>
         <SelectBoxSimple selectboxdata={language} />
-      </div>
-      <div>
-        <NavbarSettings />
       </div>
     </div>
   );

@@ -13,13 +13,13 @@ const SelectBoxSimple = ({ selectboxdata }) => {
   return (
     <Listbox value={selected} onChange={setSelected}>
       <div className="relative  ">
-        <Listbox.Button className="inline-flex w-full  rounded-md py-2    px-2
-           text-[11px] uppercase  hover:bg-[#1a19193a]  gap-2 ">
+        <Listbox.Button className="inline-flex border w-full  rounded-md py-2    px-2
+           text-[11px] uppercase   hover:bg-violet-600  gap-2 ">
           <span className="inline-flex  w-full justify-center rounded-md  
-           text-[11px] uppercase text-white  hover:bg-[#1a19193a]  gap-2 ">{selected.name}</span>
+           text-[11px] uppercase text-black   gap-2 ">{selected.name}</span>
           <span className="">
             <FiChevronDown
-              className="text-sm  text-violet-200 hover:text-violet-100"
+              className="text-sm  text-violet-800 hover:text-violet-800"
             />
           </span>
         </Listbox.Button>

@@ -2,17 +2,17 @@ import React from 'react';
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment, useEffect, useRef, useState } from 'react'
 import { FiChevronDown } from 'react-icons/fi';
+import { HiDotsVertical } from 'react-icons/hi';
+import NavbarRightItems from './NavbarRightItems';
 
 const NavbarSettings = () => {
   return (
     <div className="">
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex w-full justify-center rounded-md   px-4
-           text-[11px] uppercase text-white  hover:bg-[#1a19193a] py-2 gap-2 ">
-            Settings
-            <FiChevronDown
-              className="text-sm text-violet-200 hover:text-violet-100"
+          <Menu.Button className=" ">
+            <HiDotsVertical
+              className="text-xl  text-black hover:text-violet-100"
             />
           </Menu.Button>
         </div>
@@ -54,19 +54,10 @@ const NavbarSettings = () => {
                     className={`${active ? 'bg-violet-500 text-white' : 'text-gray-900'
                       } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
-                    {active ? (
-                      <DuplicateActiveIcon
-                        className="mr-2 h-5 w-5"
-                        aria-hidden="true"
-                      />
-                    ) : (
-                      <DuplicateInactiveIcon
-                        className="mr-2 h-5 w-5"
-                        aria-hidden="true"
-                      />
-                    )}
-                    Duplicate
+                    <NavbarRightItems />
                   </button>
+
+
                 )}
               </Menu.Item>
             </div>
