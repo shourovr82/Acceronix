@@ -12,7 +12,7 @@ const NavbarSettings = () => {
         <div>
           <Menu.Button className=" ">
             <HiDotsVertical
-              className="text-xl  text-black hover:text-violet-100"
+              className="text-xl  text-black"
             />
           </Menu.Button>
         </div>

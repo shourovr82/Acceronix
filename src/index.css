@@ -59,3 +59,8 @@ code {
   -webkit-align-items: center;
   align-items: center;
 }
+
+.navshadow {
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px #999;
+}

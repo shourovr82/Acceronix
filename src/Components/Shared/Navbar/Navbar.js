@@ -41,30 +41,7 @@ const Navbar = () => {
           </div>
 
 
-          <div className="relative lg:w-[50%] flex items-center rounded-md  shadow-lg shadow-[#2e2c2c1e]  h-10 w-full  focus-within:shadow-lg  overflow-hidden">
 
-
-
-            <div className="grid place-items-center lg:border-r  px-2 h-full text-gray-300 bg-[#f4f4f4]">
-              <select id="Com" className="text-xs bg-transparent  text-gray-800 outline-none py-2 ">
-                <option value="com" defaultChecked>All Categories</option>
-                <option value="net">net</option>
-                <option value="org">org</option>
-                <option value="io">io</option>
-              </select>
-            </div>
-            <input
-              className="peer  h-full px-2  w-full outline-none text-sm text-gray-700 pr-2"
-              type="text"
-              id="search"
-              placeholder="Search for products..." />
-
-            <div className="flex bg-[#603cd6] justify-center items-center h-full  w-32    ">
-              <button ><BsSearch className='text-white ' /></button>
-            </div>
-
-            {/* bg-gradient-to-r from-[#633ed9] to-[#200d89]  */}
-          </div>
 
 
 
