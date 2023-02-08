@@ -106,7 +106,7 @@ const ProductsForMen = ({ perview, roundedphoto }) => {
                         <div className='flex items-center gap-3'><p className='font-semibold'>$270.00</p>
                           <span className='line-through text-xs text-slate-500'>$300.30</span>
                         </div>
-                        <div className=' -mt-10 group-hover:z-10  group-hover:mt-0  group-hover:block opacity-0 group-hover:opacity-100 transition-all duration-500   justify-center items-center ' >
+                        {/* <div className=' -mt-10 group-hover:z-10  group-hover:mt-0  group-hover:block opacity-0 group-hover:opacity-100 transition-all duration-500   justify-center items-center ' >
                           <hr className='my-2' />
                           <div className='flex  items-center justify-between'>
                             <div>
@@ -121,7 +121,7 @@ const ProductsForMen = ({ perview, roundedphoto }) => {
                             </div>
 
                           </div>
-                        </div>
+                        </div> */}
 
 
                       </div>
