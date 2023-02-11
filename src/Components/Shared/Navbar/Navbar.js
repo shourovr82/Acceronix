@@ -2,6 +2,9 @@ import React from 'react';
 import NavbarTop from './NavbarTop';
 import mainLogo from '../../../Assets/Logo/logo.png'
 import { BiSearch } from 'react-icons/bi';
+import { HiOutlineShoppingBag } from 'react-icons/hi';
+import { TbTruckDelivery } from 'react-icons/tb';
+import { CgMenu } from 'react-icons/cg';
 
 const Navbar = () => {
   return (
@@ -12,9 +15,9 @@ const Navbar = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className='flex justify-between items-center'>
+      <nav className='flex max-w-7xl my-1 mx-auto justify-between items-center'>
         <div>
-          <img src={mainLogo} alt="" />
+          <img className='w-52' src={mainLogo} alt="" />
         </div>
 
 
@@ -30,9 +33,17 @@ const Navbar = () => {
 
 
 
-        <div>
+        <div className=' flex gap-5'>
 
-          Cart
+          <button type='button' className='text-2xl'>
+            <span><HiOutlineShoppingBag /></span>
+          </button>
+          <button type='button' className='text-2xl'>
+            <span><TbTruckDelivery /></span>
+          </button>
+          <button type='button' className='text-2xl'>
+            <span><CgMenu /></span>
+          </button>
         </div>
 
       </nav>
