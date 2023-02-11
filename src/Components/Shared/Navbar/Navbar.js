@@ -21,14 +21,14 @@ const Navbar = () => {
         </div>
 
 
-        <div class="relative block">
+        <div class="relative w-[50%] block">
           <input
-            class="w-full bg-white  border border-[#4629d4]  rounded-md py-2
+            class="w-full bg-white  border-2 border-[#4629d4]  rounded-md py-2
              pl-3 pr-10 focus:outline-none"
             placeholder="Enter your keyword to search" type="text" />
-          <span class="absolute inset-y-0 right-0 flex items-center pr-3">
-            <BiSearch className='text-2xl' />
-          </span>
+          <button class="absolute inset-y-0 right-0 flex items-center pr-3 pl-3">
+            <BiSearch className='text-2xl text-[#4629d4]' />
+          </button>
         </div>
 
 
