@@ -7,7 +7,7 @@ import NavbarTop from '../Components/Shared/Navbar/NavbarTop';
 
 const AcceronixLayout = () => {
   return (
-    <div>
+    <div className=' bg-[#F3F3F3]'>
       {/* <Header /> */}
       <Navbar />
       {/* <NavbarTop /> */}

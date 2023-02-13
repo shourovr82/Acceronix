@@ -15,9 +15,9 @@ const NavbarTop = () => {
           <div className="dropdown dropdown-hover">
             <label tabIndex={0} className="flex cursor-pointer text-[#666666] hover:underline underline-offset-2 hover:text-[#321a9e]  text-sm gap-1 items-center">Customer Service <span><FiChevronDown className='mt-0.5' /></span> </label>
             <ul tabIndex={0} className="dropdown-content menu text-sm shadow  bg-base-100 rounded-box ">
-              <li><a>ASK SHAFIN</a></li>
-              <li><a>Help Center</a></li>
-              <li><a>Feedback</a></li>
+              <li>ASK SHAFIN</li>
+              <li>Help Center</li>
+              <li>Feedback</li>
             </ul>
           </div>
         </div>
@@ -30,9 +30,9 @@ const NavbarTop = () => {
               <label tabIndex={0} className="flex items-center cursor-pointer text-sm gap-1 font-medium text-[#666666]
                m-1"><span><FaGlobeAmericas /></span> EN <span><FiChevronDown /></span>  </label>
               <ul tabIndex={0} className="dropdown-content menu  shadow bg-base-100 rounded-box">
-                <li><a> <span><AiFillBank /></span> BN</a></li>
-                <li><a> <span><AiFillBank /></span>EN</a></li>
-                <li><a> <span><AiFillBank /></span>IN</a></li>
+                <li> <span><AiFillBank /></span> BN</li>
+                <li> <span><AiFillBank /></span>EN</li>
+                <li> <span><AiFillBank /></span>IN</li>
               </ul>
             </div>
           </div>

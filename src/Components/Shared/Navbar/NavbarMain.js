@@ -32,13 +32,13 @@ const NavbarMain = () => {
 
         {/* starts of search bar */}
         <div>
-          <div class="flex  flex-col items-center justify-center bg-white">
+          <div className="flex  flex-col items-center justify-center bg-white">
             {/* <!--  --> */}
-            <div class=" flex items-center rounded-full border hover:shadow-md">
-              <input type="text" class="w-full bg-transparent rounded-full py-1.5 lg:focus:w-[20rem] duration-300 ease-in-out pl-4 outline-none" placeholder='Search Anything...' />
-              <div class="pr-4">
+            <div className=" flex items-center rounded-full border hover:shadow-md">
+              <input type="text" className="w-full bg-transparent rounded-full py-1.5 lg:focus:w-[20rem] duration-300 ease-in-out pl-4 outline-none" placeholder='Search Anything...' />
+              <div className="pr-4">
 
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
 

@@ -8,25 +8,25 @@ import { CgMenu } from 'react-icons/cg';
 
 const Navbar = () => {
   return (
-    <div>
+    <div className='bg-white '>
       {/* Navbar top  */}
       <div>
         <NavbarTop />
       </div>
 
       {/* Main Navbar */}
-      <nav className='flex max-w-7xl my-1 mx-auto justify-between items-center'>
+      <nav className='flex  max-w-7xl py-1.5 mx-auto justify-between items-center'>
         <div>
           <img className='w-52' src={mainLogo} alt="" />
         </div>
 
 
-        <div class="relative w-[50%] block">
+        <div className="relative w-[50%] block">
           <input
-            class="w-full bg-white  border-2 border-[#4629d4]  rounded-md py-2
+            className="w-full bg-white  border-2 border-[#4629d4]  rounded-md py-1.5
              pl-3 pr-10 focus:outline-none"
             placeholder="Enter your keyword to search" type="text" />
-          <button class="absolute inset-y-0 right-0 flex items-center pr-3 pl-3">
+          <button className="absolute inset-y-0 right-0 flex items-center pr-3 pl-3">
             <BiSearch className='text-2xl text-[#4629d4]' />
           </button>
         </div>
