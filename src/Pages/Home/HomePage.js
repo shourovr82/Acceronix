@@ -20,6 +20,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper";
 import FlashSell from './FlashSell/FlashSell';
+import BestProducts from './BestProducts/BestProducts';
 
 const HomePage = () => {
   return (
@@ -166,7 +167,10 @@ const HomePage = () => {
       <div>
         <FlashSell />
       </div>
-
+      {/* top brands, best of acceronix, new arrivals */}
+      <div>
+        <BestProducts />
+      </div>
     </section>
 
   );
