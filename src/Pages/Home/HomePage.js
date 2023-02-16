@@ -2,7 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BiCategory } from 'react-icons/bi';
 import { FiChevronRight } from 'react-icons/fi';
-import bannerAd1 from '../../Assets/BannerAd/bannerAd1.bmp';
+import bannerAd1Slide from '../../Assets/BannerAd/bannerAd1.bmp';
+import bannerAd2Slide from '../../Assets/Ad/331184944_992544888819025_5901655412320208653_n.gif';
+import bannerAd3Slide from '../../Assets/Ad/black-friday-sale-up-to-70-off-discount-red-banner-in-minimalistic-modern-style-with-balloons-and-gifts-vector.jpg';
+import bannerAd4Slide from '../../Assets/Ad/halloween-sale-shop-banner-in-flat-and-paper-cut-style-with-design-vector.jpg';
+import bannerAd5Slide from '../../Assets/Ad/online-shopping-store-on-website-and-mobile-phone-design-smart-business-marketing-concept-horizontal-view-illustration-free-vector.jpg';
+import bannerAd6Slide from '../../Assets/Ad/online-shopping-template-for-food-and-package-delivery-vector.jpg';
+import bannerAd7Slide from '../../Assets/Ad/wireframe-computer-online-shop-low-poly-illustration-free-vector.jpg';
 import userLogo from '../../Assets/Logo/userLogo.png'
 import LoginModal from '../Authentication/AuthenticationModal/LoginModal';
 import bannerAd2 from '../../Assets/BannerAd/BannerAd2.jpg';
@@ -78,14 +84,12 @@ const HomePage = () => {
                 modules={[Pagination, EffectFade, Navigation, Autoplay]}
                 className="mySwiper overflow-hidden"
               >
-                <SwiperSlide>      <img className='object-contain w-full' src={bannerAd1} alt="" /></SwiperSlide>
-                <SwiperSlide>      <img className='object-contain w-full' src={bannerAd1} alt="" /></SwiperSlide>
-                <SwiperSlide>      <img className='object-contain w-full' src={bannerAd1} alt="" /></SwiperSlide>
-                <SwiperSlide>      <img className='object-contain w-full' src={bannerAd1} alt="" /></SwiperSlide>
-                <SwiperSlide>      <img className='object-contain w-full' src={bannerAd1} alt="" /></SwiperSlide>
-                <SwiperSlide>      <img className='object-contain w-full' src={bannerAd1} alt="" /></SwiperSlide>
-                <SwiperSlide>      <img className='object-contain w-full' src={bannerAd1} alt="" /></SwiperSlide>
-                <SwiperSlide>      <img className='object-contain w-full' src={bannerAd1} alt="" /></SwiperSlide>
+                <SwiperSlide>      <img className='object-fill h-[25rem]  w-full' src={bannerAd1Slide} alt="" /></SwiperSlide>
+                <SwiperSlide>      <img className='object-fill h-[25rem] w-full' src={bannerAd2Slide} alt="" /></SwiperSlide>
+                <SwiperSlide>      <img className='object-fill h-[25rem] w-full' src={bannerAd3Slide} alt="" /></SwiperSlide>
+                <SwiperSlide>      <img className='object-fill h-[25rem] w-full' src={bannerAd4Slide} alt="" /></SwiperSlide>
+                <SwiperSlide>      <img className='object-fill h-[25rem] w-full' src={bannerAd6Slide} alt="" /></SwiperSlide>
+                <SwiperSlide>      <img className='object-fill h-[25rem] w-full' src={bannerAd7Slide} alt="" /></SwiperSlide>
               </Swiper>
             </>
           </div>
@@ -156,8 +160,8 @@ const HomePage = () => {
           </div>
 
           {/* no 1 shop brand */}
-          <div className='w-full bg-white h-full shadow-lg flex items-center justify-center'>
-            <img src={brandLogo} className="object-contain" alt="" />
+          <div className='w-full  h-full shadow-lg flex items-center justify-center'>
+            <img src={bannerAd2Slide} className="object-fill" alt="" />
           </div>
         </div>
       </div>

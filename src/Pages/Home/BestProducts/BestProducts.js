@@ -4,15 +4,35 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import './BestProducts.css';
 import newArrivals1 from '../../../Assets/Home/BestProducts/NewArrivals/newArrivals1.gif'
-import newArrivals2 from '../../../Assets/Home/BestProducts/NewArrivals/newArrivals2.gif'
+import newArrivals2 from '../../../Assets/Home/BestProducts/NewArrivals/newArrivals2.gif';
+
+// electronics 
+import electronics1 from '../../../Assets/Home/BestProducts/Electronics/328802096_525010939775615_6297863402789002366_n.gif'
+import electronics2 from '../../../Assets/Home/BestProducts/Electronics/331196214_590960612879361_1086393749366571890_n.gif'
+import electronics3 from '../../../Assets/Home/BestProducts/Electronics/331214596_6201066563257855_4246525218588649331_n.gif'
+import electronics4 from '../../../Assets/Home/BestProducts/Electronics/331394058_717124679905153_267362410116822390_n.gif'
+import electronics5 from '../../../Assets/Home/BestProducts/Electronics/331639964_1332185874241147_5076619805115185201_n.gif'
+import electronics6 from '../../../Assets/Home/BestProducts/Electronics/331662079_905686280776156_8900327673396712870_n.gif'
+import electronics7 from '../../../Assets/Home/BestProducts/Electronics/331728951_1340034563451113_2621060556533936111_n.gif';
+
+// home lover
+import homeLover1 from '../../../Assets/Home/BestProducts/HomeLover/328802649_898084194573687_7312367630512507243_n.gif'
+import homeLover2 from '../../../Assets/Home/BestProducts/HomeLover/328814203_505094148481108_2128643876071418146_n.gif'
+import homeLover3 from '../../../Assets/Home/BestProducts/HomeLover/329944910_967780347522013_4485537581191241443_n.gif'
+import homeLover4 from '../../../Assets/Home/BestProducts/HomeLover/331539874_697515582120617_2617451414368978687_n.gif'
+import homeLover5 from '../../../Assets/Home/BestProducts/HomeLover/331771737_911398873317002_354205663162002693_n.gif'
+import homeLover6 from '../../../Assets/Home/BestProducts/HomeLover/331867165_1666390247147429_5749229662119396188_n.gif'
+
 const BestProducts = () => {
   const [selectedIndex, setSelectedIndex] = useState(0)
 
   return (
-    <section className='grid mt-5 grid-cols-3'>
-      <div className='  rounded-md '>
+    <section className='grid mt-5 
+     gap-2 overflow-hidden mb-10 grid-cols-3'>
+      <div className='  rounded-md  '>
+
         <h1 className='text-2xl font-semibold text-center'>Top Brands</h1>
-        <Tabs className='p-2 h-full  '>
+        <Tabs className='p-2 bg-white  mt-2 '>
           <TabList className='flex justify-around items-center border-b bg-white  '>
             <Tab className='hover:border-b-2 py-2  border-red-600  outline-none px-2  duration-100 ease-linear cursor-pointer text-[#999999]'>Electronics</Tab>
             <Tab className='hover:border-b-2 py-2 border-red-600 outline-none  px-2  duration-100 ease-linear cursor-pointer text-[#999999]'>Everyday needs</Tab>
@@ -20,23 +40,22 @@ const BestProducts = () => {
             <Tab className='hover:border-b-2 py-2 border-red-600 outline-none  px-2  duration-100 ease-linear cursor-pointer text-[#999999]'>Home</Tab>
           </TabList>
 
+          {/* tab 1 content */}
           <TabPanel>
-            <p>
-              <b>Mario</b> (<i>Japanese: マリオ Hepburn: Mario, [ma.ɾʲi.o]</i>) (<i>English:
-                /ˈmɑːrioʊ/; Italian: [ˈmaːrjo]</i>) is a fictional character in the Mario video
-              game franchise, owned by Nintendo and created by Japanese video game designer
-              Shigeru Miyamoto. Serving as the company's mascot and the eponymous protagonist
-              of the series, Mario has appeared in over 200 video games since his creation.
-              Depicted as a short, pudgy, Italian plumber who resides in the Mushroom
-              Kingdom, his adventures generally center upon rescuing Princess Peach from the
-              Koopa villain Bowser. His younger brother and sidekick is Luigi.
-            </p>
-            <p>
-              Source:{' '}
-              <a href="https://en.wikipedia.org/wiki/Mario" target="_blank">
-                Wikipedia
-              </a>
-            </p>
+            <div className='mt-1  pt-2'>
+              <div>
+                <img className='w-full' src={electronics2} alt="" />
+              </div>
+              {/* bottom photos */}
+              <div className='grid  gap-1 mt-1 grid-cols-3'>
+                <img className='w-full' src={electronics1} alt="" />
+                <img className='w-full' src={electronics3} alt="" />
+                <img className='w-full' src={electronics4} alt="" />
+                <img className='w-full' src={electronics5} alt="" />
+                <img className='w-full' src={electronics6} alt="" />
+                <img className='w-full' src={electronics7} alt="" />
+              </div>
+            </div>
           </TabPanel>
 
           <TabPanel >
@@ -95,11 +114,12 @@ const BestProducts = () => {
             </p>
           </TabPanel>
         </Tabs>
-
       </div >
+
+      {/* best of acceronix tab  */}
       <div>
         <h1 className='text-2xl font-semibold text-center'>Best of ACCERONIX</h1>
-        <Tabs className='p-2 '>
+        <Tabs className='p-2 bg-white mt-2 h-full'>
           <TabList className='flex justify-around items-center border-b bg-white  '>
             <Tab className='hover:border-b-2 py-2  border-red-600  outline-none px-2  duration-100 ease-linear cursor-pointer text-[#999999]'>Beauty</Tab>
             <Tab className='hover:border-b-2 py-2 border-red-600 outline-none  px-2  duration-100 ease-linear cursor-pointer text-[#999999]'>Home Lover</Tab>
@@ -130,21 +150,69 @@ const BestProducts = () => {
           </TabPanel>
 
           <TabPanel>
-            <p>
-              <b>Princess Peach</b> (<i>Japanese: ピーチ姫 Hepburn: Pīchi-hime, [piː.tɕi̥ çi̥.me]</i>)
-              is a character in Nintendo's Mario franchise. Originally created by Shigeru Miyamoto,
-              Peach is the princess of the fictional Mushroom Kingdom, which is constantly under
-              attack by Bowser. She often plays the damsel in distress role within the series and
-              is the lead female. She is often portrayed as Mario's love interest and has appeared
-              in Super Princess Peach, where she is the main playable character.
-            </p>
-            <p>
-              Source:{' '}
-              <a href="https://en.wikipedia.org/wiki/Princess_Peach" target="_blank">
-                Wikipedia
-              </a>
-            </p>
+            <div className='grid grid-cols-3 mt-1 gap-2 gap-y-3 '>
+
+
+
+
+              <div className=' bg-white shadow-xl rounded-md p-2 '>
+                <img className='rounded-md w-full    ' src={homeLover1} alt="" />
+                <div className='mt-3'>
+                  <h1 className='text-sm'><span className='uppercase'>Haier</span> <br />
+                    Refrigerators 1</h1>
+                  <p className='text-violet-800 font-semibold'>$ 300</p>
+                </div>
+              </div>
+              <div className=' bg-white shadow-xl rounded-md p-2 '>
+                <img className='rounded-md w-full    ' src={homeLover1} alt="" />
+                <div className='mt-3'>
+                  <h1 className='text-sm'><span className='uppercase'>Haier</span> <br />
+                    Refrigerators 1</h1>
+                  <p className='text-violet-800 font-semibold'>$ 300</p>
+                </div>
+              </div>
+              <div className=' bg-white shadow-xl rounded-md p-2 '>
+                <img className='rounded-md w-full    ' src={homeLover1} alt="" />
+                <div className='mt-3'>
+                  <h1 className='text-sm'><span className='uppercase'>Haier</span> <br />
+                    Refrigerators 1</h1>
+                  <p className='text-violet-800 font-semibold'>$ 300</p>
+                </div>
+              </div>
+              <div className=' bg-white shadow-xl rounded-md p-2 '>
+                <img className='rounded-md w-full    ' src={homeLover1} alt="" />
+                <div className='mt-3'>
+                  <h1 className='text-sm'><span className='uppercase'>Haier</span> <br />
+                    Refrigerators 1</h1>
+                  <p className='text-violet-800 font-semibold'>$ 300</p>
+                </div>
+              </div>
+              <div className=' bg-white shadow-xl rounded-md p-2 '>
+                <img className='rounded-md w-full    ' src={homeLover1} alt="" />
+                <div className='mt-3'>
+                  <h1 className='text-sm'><span className='uppercase'>Haier</span> <br />
+                    Refrigerators 1</h1>
+                  <p className='text-violet-800 font-semibold'>$ 300</p>
+                </div>
+              </div>
+              <div className=' bg-white shadow-xl rounded-md p-2 '>
+                <img className='rounded-md w-full    ' src={homeLover1} alt="" />
+                <div className='mt-3'>
+                  <h1 className='text-sm'><span className='uppercase'>Haier</span> <br />
+                    Refrigerators 1</h1>
+                  <p className='text-violet-800 font-semibold'>$ 300</p>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
           </TabPanel>
+
+
+
           <TabPanel>
             <p>
               <b>Yoshi</b> (<i>ヨッシー Yosshī, [joɕ.ɕiː]</i>) (<i>English: /ˈjoʊʃi/ or /ˈjɒʃi/</i>), once
@@ -186,9 +254,9 @@ const BestProducts = () => {
       </div>
       <div >
         <h1 className='text-2xl font-semibold text-center'>New Arrivals</h1>
-        <div className='flex flex-col gap-3 mt-2'>
-          <img src={newArrivals1} alt="" />
-          <img src={newArrivals2} alt="" />
+        <div className='flex flex-col  gap-3 mt-2'>
+          <img className="w-full " src={newArrivals1} alt="" />
+          <img className="w-full " src={newArrivals2} alt="" />
         </div>
       </div>
     </section >
