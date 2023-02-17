@@ -132,11 +132,8 @@ const BestProducts = () => {
               <p >
                 <b>Beauty</b> is a fictional character in the Mario video
                 game franchise, owned by Nintendo and created by Japanese video game designer
-                Shigeru Miyamoto. Serving as the company's mascot and the eponymous protagonist
-                of the series, Mario has appeared in over 200 video games since his creation.
-                Depicted as a short, pudgy, Italian plumber who resides in the Mushroom
-                Kingdom, his adventures generally center upon rescuing Princess Peach from the
-                Koopa villain Bowser. His younger brother and sidekick is Luigi.
+                Shigeru Miyamoto. Serving as the company's mascotth
+                this is another tab for best of acceronix
               </p>
               <p >
                 Source:{' '}
