@@ -15,6 +15,16 @@ import electronics5 from '../../../Assets/Home/BestProducts/Electronics/33163996
 import electronics6 from '../../../Assets/Home/BestProducts/Electronics/331662079_905686280776156_8900327673396712870_n.gif'
 import electronics7 from '../../../Assets/Home/BestProducts/Electronics/331728951_1340034563451113_2621060556533936111_n.gif';
 
+// Everyday needs 
+import everydayneeds1 from '../../../Assets/Home/BestProducts/EverydayNeeds/330889617_3331098640486829_5453906618710937143_n.gif';
+import everydayneeds2 from '../../../Assets/Home/BestProducts/EverydayNeeds/329944910_1344990239611787_3843690474387178980_n.gif';
+import everydayneeds3 from '../../../Assets/Home/BestProducts/EverydayNeeds/330384247_723866122696263_265660986575680757_n.gif';
+import everydayneeds4 from '../../../Assets/Home/BestProducts/EverydayNeeds/330384247_855094542230545_3305184967421923134_n.gif';
+import everydayneeds5 from '../../../Assets/Home/BestProducts/EverydayNeeds/331390070_959457281717529_3518075010759034134_n.gif';
+import everydayneeds6 from '../../../Assets/Home/BestProducts/EverydayNeeds/331525193_6376912722392836_2786431830030442265_n.gif';
+import everydayneeds7 from '../../../Assets/Home/BestProducts/EverydayNeeds/331662079_905686280776156_8900327673396712870_n.gif';
+
+
 // home lover
 import homeLover1 from '../../../Assets/Home/BestProducts/HomeLover/328802649_898084194573687_7312367630512507243_n.gif'
 import homeLover2 from '../../../Assets/Home/BestProducts/HomeLover/328814203_505094148481108_2128643876071418146_n.gif'
@@ -59,21 +69,16 @@ const BestProducts = () => {
           </TabPanel>
 
           <TabPanel >
-            <div className='bg-white  p-2 mt-1'>
-              <p>
-                <b>Everybody Needs</b>
-                is a character in Nintendo's Mario franchise. Originally created by Shigeru Miyamoto,
-                Peach is the princess of the fictional Mushroom Kingdom, which is constantly under
-                attack by Bowser. She often plays the damsel in distress role within the series and
-                is the lead female. She is often portrayed as Mario's love interest and has appeared
-                in Super Princess Peach, where she is the main playable character.
-              </p>
-              <p>
-                Source:{' '}
-                <a href="https://en.wikipedia.org/wiki/Princess_Peach" target="_blank">
-                  Wikipedia
-                </a>
-              </p>
+            <div className='mt-1  pt-2'>
+              <img className='w-full object-contain' src={everydayneeds1} alt="" />
+            </div>
+            <div className='grid  gap-1 mt-1 grid-cols-3'>
+              <img className='w-full' src={everydayneeds2} alt="" />
+              <img className='w-full' src={everydayneeds3} alt="" />
+              <img className='w-full' src={everydayneeds4} alt="" />
+              <img className='w-full' src={everydayneeds5} alt="" />
+              <img className='w-full' src={everydayneeds6} alt="" />
+              <img className='w-full' src={everydayneeds7} alt="" />
             </div>
 
           </TabPanel>
@@ -115,7 +120,7 @@ const BestProducts = () => {
           </TabPanel>
         </Tabs>
       </div >
-
+      {/* ------------------------------------------ */}
       {/* best of acceronix tab  */}
       <div>
         <h1 className='text-2xl font-semibold text-center'>Best of ACCERONIX</h1>
